@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Music - YouTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/explore.css" />
+    <link rel="stylesheet" href="styles/dark.css" />
+    <link rel="stylesheet" href="styles/originals.css" />
+    <link rel="stylesheet" href="styles/music.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="menu button" />
+        <a href="youtube.html"><img class="youtube-logo" src="icons/youtube-logo.svg" alt="YouTube logo" /></a>
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+        <div class="more-options-menu">
+          <button class="more-options-button" id="moreOptionsBtn">⋮</button>
+          <div class="menu-dropdown" id="menuDropdown">
+            <div class="menu-item"><img src="icons/upload.svg" alt="Create" /><div>Create</div></div>
+            <div class="menu-item"><img src="icons/youtube-apps.svg" alt="Apps" /><div>YouTube apps</div></div>
+            <div class="menu-item"><img src="icons/notifications.svg" alt="Notifications" /><div>Notifications</div></div>
+          </div>
+        </div>
+        <img class="current-user-picture middle-profile" src="channel-pictures/my-channel.jpeg" alt="My channel picture" />
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" alt="upload button" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-app-button-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="YouTube apps button" />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle dark mode"></button>
+          <div class="notification-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" alt="notifications button" />
+          <div class="tooltip">Notifications</div>
+          <div class="notifications-count">3</div>
+        </div>
+        <img class="current-user-picture" src="channel-pictures/my-channel.jpeg" alt="My channel picture" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <a href="youtube.html" class="sidebar-link">
+        <div class="sidebar-section">
+          <img src="sidebar/home.svg" alt="Home" />
+          <div class="sidebar-section-title">Home</div>
+        </div>
+      </a>
+      <a href="explore.html" class="sidebar-link">
+        <div class="sidebar-section">
+          <img src="sidebar/explore.svg" alt="Explore" />
+          <div class="sidebar-section-title">Explore</div>
+        </div>
+      </a>
+      <a href="subscriptions.html" class="sidebar-link">
+        <div class="sidebar-section">
+          <img src="sidebar/subscriptions.svg" alt="Subscriptions" />
+          <div class="sidebar-section-title">Subscriptions</div>
+        </div>
+      </a>
+      <a href="originals.html" class="sidebar-link">
+        <div class="sidebar-section">
+          <img src="sidebar/originals.svg" alt="Originals" />
+          <div class="sidebar-section-title">Originals</div>
+        </div>
+      </a>
+      <a href="music.html" class="sidebar-link">
+        <div class="sidebar-section active">
+          <img src="sidebar/youtube-music.svg" alt="Music" />
+          <div class="sidebar-section-title">Youtube Music</div>
+        </div>
+      </a>
+      <a href="library.html" class="sidebar-link">
+        <div class="sidebar-section">
+          <img src="sidebar/library.svg" alt="Library" />
+          <div class="sidebar-section-title">Library</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="explore-page">
+      <h1 class="explore-heading music-heading">YouTube Music</h1>
+
+      <h2 class="music-section-title">Top music videos</h2>
+      <div class="music-grid">
+        <div class="music-card">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+            <img class="music-art" src="thumbnails/thumbnail-1.webp" alt="Album art" />
+          </a>
+          <p class="music-track">Talking Tech and AI</p>
+          <p class="music-artist">Marques Brownlee</p>
+        </div>
+        <div class="music-card">
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+            <img class="music-art" src="thumbnails/thumbnail-2.webp" alt="Album art" />
+          </a>
+          <p class="music-track">Try Not to Laugh #9</p>
+          <p class="music-artist">Markiplier</p>
+        </div>
+        <div class="music-card">
+          <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank">
+            <img class="music-art" src="thumbnails/thumbnail-8.webp" alt="Album art" />
+          </a>
+          <p class="music-track">Inside the Biggest Plane</p>
+          <p class="music-artist">TechVision</p>
+        </div>
+        <div class="music-card">
+          <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank">
+            <img class="music-art" src="thumbnails/thumbnail-9.webp" alt="Album art" />
+          </a>
+          <p class="music-track">Secret to Super Strength</p>
+          <p class="music-artist">ThenX</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const moreOptionsBtn = document.getElementById('moreOptionsBtn');
+      const menuDropdown = document.getElementById('menuDropdown');
+      moreOptionsBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        menuDropdown.classList.toggle('active');
+      });
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.more-options-menu')) {
+          menuDropdown.classList.remove('active');
+        }
+      });
+    </script>
+      <script src="theme.js"></script>
+  </body>
+</html>

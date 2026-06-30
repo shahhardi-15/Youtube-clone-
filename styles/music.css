@@ -1,0 +1,54 @@
+.music-heading {
+  color: rgb(15, 15, 15);
+}
+
+.music-section-title {
+  font-family: 'Roboto', Arial;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.music-card {
+  cursor: pointer;
+}
+
+.music-art {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.music-track {
+  font-family: 'Roboto', Arial;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.music-artist {
+  font-family: 'Roboto', Arial;
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+@media (max-width: 768px) {
+  .music-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
